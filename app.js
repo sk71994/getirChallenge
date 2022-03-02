@@ -24,5 +24,6 @@ const getirRoute = require('./Routes/getirRoute');
 app.use('/getir', getirRoute);
 
 module.exports = app;
-app.listen(process.env.PORT); // Heroku automatically sets this one, if I manually define a port such as 3000 it won't work.
+const port = process.env.PORT || '5000';
+app.listen(port, () => console.log(`Server started on Port ${port}`)); 
 // See https://dev.to/lawrence_eagles/causes-of-heroku-h10-app-crashed-error-and-how-to-solve-them-3jnl for further details.

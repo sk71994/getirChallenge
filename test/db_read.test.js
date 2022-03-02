@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const getir = require('../Models/getir');
-const url = 'mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true';
+const url = 'mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true&authSource=admin';
 
 const connectionParams = {
     useNewUrlParser: true,
